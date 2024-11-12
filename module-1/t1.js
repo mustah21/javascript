@@ -48,8 +48,6 @@ else {
 
 }
 
- */
-
 
 //Task 5
 
@@ -64,3 +62,47 @@ else{
   }
 
 }
+
+
+
+//Task 6
+
+
+function squareroot() {
+  const answer = confirm("Should I calculate the square root of the number")
+
+  if (answer === true) {
+    const num = Number(prompt("Please enter a number"))
+    if (num > 0) {
+      const result = Math.sqrt(num)
+      document.getElementById("root").innerHTML = "The square root is " + result;
+    } else {
+      document.getElementById("root").innerHTML = "Your entered number cannot be negative"
+    }
+  } else if (answer === false) {
+  document.getElementById("root").innerHTML = "square root not calculated"
+
+  }
+}
+
+squareroot();
+
+*/
+
+//task 7
+
+function rolldice(){
+
+  const numrolls = Number(prompt("Enter a number"));
+
+  let sum = 0;
+
+  for (let i = 0; i < numrolls; i++){
+const roll = Math.floor(Math.random() * 6) + 1
+    sum += roll;
+  }
+  document.getElementById("dice").innerHTML = "The sum of the dice rolls is: " + sum;
+
+}
+
+rolldice()
