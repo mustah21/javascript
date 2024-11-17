@@ -137,7 +137,6 @@ function check () {
 
 check()
 
- */
 
 //Task 6
 function diceroll () {
@@ -164,3 +163,6 @@ function diceroll () {
 }
 
 diceroll()
+
+ */
+
