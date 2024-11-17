@@ -1,0 +1,28 @@
+
+function modifydice () {
+
+  let modifiedroll
+  let newdice = []
+  let modlis = "<ul>"
+
+  const userinput = Number(prompt("Please enter the number of sides you'd want on the dice"))
+
+  do {
+    modifiedroll = Math.floor(Math.random() * userinput) + 1
+
+    if (modifiedroll === newdice[modifiedroll]) {
+      break
+    } else {
+      newdice.push(modifiedroll)
+    }
+  }
+  while (modifiedroll <= newdice[modifiedroll])
+
+  for (let i = 0; i < newdice.length; i++) {
+    modlis += "<li>" + newdice[i] + "</li>"
+  }
+  document.getElementById('modified').innerHTML = modlis;
+
+}
+
+modifydice()
